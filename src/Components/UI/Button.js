@@ -40,6 +40,13 @@ function Button({
 
 Button.propTypes = {
   // using PropTypes -> change to: TypeScript
+  primary: propTypes.bool,
+  secondary: propTypes.bool,
+  success: propTypes.bool,
+  warning: propTypes.bool,
+  danger: propTypes.bool,
+  outline: propTypes.bool,
+  rounded: propTypes.bool,
   checkType: ({ primary, secondary, success, warning, danger }) => {
     const count =
       Number(!!primary) +

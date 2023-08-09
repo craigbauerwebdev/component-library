@@ -1,4 +1,4 @@
-import Button from "./Buttons/Button";
+import Button from "./Components/UI/Button";
 import { FaBitcoin } from "react-icons/fa";
 import { DiCodeigniter } from "react-icons/di";
 import { FaStickerMule } from "react-icons/fa";
@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       Buttons
-      <Button className="mb-20" onClick={handleClick}>
+      <Button primary rounded className="mb-20" onClick={handleClick}>
         Button With No Props
       </Button>
       <Button primary rounded>
