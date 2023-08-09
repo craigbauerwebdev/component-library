@@ -1,17 +1,14 @@
-import Button from "./Components/UI/Button";
-import { FaBitcoin } from "react-icons/fa";
+import Button from "../Components/UI/Button";
+import { FaBitcoin, FaStickerMule } from "react-icons/fa";
 import { DiCodeigniter } from "react-icons/di";
-import { FaStickerMule } from "react-icons/fa";
-//import ButtonPage from "./Pages/ButtonPage";
 
-function App() {
+function ButtonPage() {
   const handleClick = () => {
     console.log("Clicked!");
   };
 
   return (
     <div className="App">
-      {/* <ButtonPage /> */}
       Buttons
       <Button primary rounded className="mb-20" onClick={handleClick}>
         Button With No Props
@@ -41,4 +38,4 @@ function App() {
   );
 }
 
-export default App;
+export default ButtonPage;
