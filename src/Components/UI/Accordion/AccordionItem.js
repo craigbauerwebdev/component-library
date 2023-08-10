@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { RiArrowDownCircleFill, RiArrowLeftCircleFill } from "react-icons/ri";
 
 function AccordionItem({ item, index, expandedIndex, updateIndex }) {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -7,10 +8,19 @@ function AccordionItem({ item, index, expandedIndex, updateIndex }) {
     setIsExpanded(index === expandedIndex);
   });
 
+  const icon = isExpanded ? (
+    <RiArrowDownCircleFill />
+  ) : (
+    <RiArrowLeftCircleFill />
+  );
+
   return (
     <div onClick={() => updateIndex(index)} key={item.id}>
-      <div>{item.label}</div>
-      {isExpanded && <div>{item.content}</div>}
+      <div className="accordion-label">
+        {item.label}
+        {icon}
+      </div>
+      {isExpanded && <div className="accordion-content">{item.content}</div>}
     </div>
   );
 }

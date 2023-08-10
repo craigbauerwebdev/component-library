@@ -5,3 +5,31 @@
 button > svg {
   margin-right: 5px;
 }
+
+.accordion-wrapper {
+  margin: 30px auto;
+  width: 500px;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  border-left: 1px solid #000;
+}
+.accordion-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background: #333;
+  color: #fff;
+  border-bottom: 1px solid #000;
+}
+
+.accordion-label svg {
+  width: 90px;
+  height: 32px;
+  width: 32px;
+}
+
+.accordion-content {
+  padding: 15px;
+  line-height: 30px;
+  border-bottom: 1px solid #000;
+}

@@ -2,10 +2,6 @@ import ButtonPage from "./Pages/ButtonPage";
 import Accordion from "./Components/UI/Accordion/Accordion";
 
 function App() {
-  const handleClick = () => {
-    console.log("Clicked!");
-  };
-
   const items = [
     {
       id: "q1",
@@ -27,7 +23,7 @@ function App() {
   return (
     <div className="App">
       <Accordion items={items} />
-      <ButtonPage onClick={handleClick} />
+      <ButtonPage />
     </div>
   );
 }
