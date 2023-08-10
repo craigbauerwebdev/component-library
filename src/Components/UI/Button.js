@@ -13,6 +13,7 @@ function Button({
   rounded,
   ...rest //remaining props objects
 }) {
+  // uses tailwindcss & tailwind merge
   const classes = twMerge(
     className(rest.className, "flex items-center p-3 text-lg border-2 my-2", {
       "bg-blue-900 border-blue-900 text-white": primary,

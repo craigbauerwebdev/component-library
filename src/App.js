@@ -1,42 +1,33 @@
-import Button from "./Components/UI/Button";
-import { FaBitcoin } from "react-icons/fa";
-import { DiCodeigniter } from "react-icons/di";
-import { FaStickerMule } from "react-icons/fa";
-//import ButtonPage from "./Pages/ButtonPage";
+import ButtonPage from "./Pages/ButtonPage";
+import Accordion from "./Components/UI/Accordion/Accordion";
 
 function App() {
   const handleClick = () => {
     console.log("Clicked!");
   };
 
+  const items = [
+    {
+      id: "q1",
+      label: "Question 1",
+      content: "The answer to question 1",
+    },
+    {
+      id: "q2",
+      label: "Question 2",
+      content: "The answer to question 2",
+    },
+    {
+      id: "q3",
+      label: "Question 3",
+      content: "The answer to question 3",
+    },
+  ];
+
   return (
     <div className="App">
-      {/* <ButtonPage /> */}
-      Buttons
-      <Button primary rounded className="mb-20" onClick={handleClick}>
-        Button With No Props
-      </Button>
-      <Button primary rounded>
-        <FaBitcoin />
-        Primary
-      </Button>
-      <Button primary outline>
-        <FaBitcoin />
-        Primary
-      </Button>
-      <Button secondary>
-        <DiCodeigniter />
-        Secondary
-      </Button>
-      <Button success>
-        <FaStickerMule />
-        Success
-      </Button>
-      <Button warning>Warning</Button>
-      <Button danger>Cancel Account</Button>
-      <Button danger outline>
-        Cancel Account
-      </Button>
+      <Accordion items={items} />
+      <ButtonPage onClick={handleClick} />
     </div>
   );
 }
