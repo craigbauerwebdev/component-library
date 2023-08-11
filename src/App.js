@@ -1,5 +1,5 @@
 import ButtonPage from "./Pages/ButtonPage";
-import Accordion from "./Components/UI/Accordion/Accordion";
+import AccordionPage from "./Pages/AccordionPage";
 
 function App() {
   const items = [
@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div className="App">
-      <Accordion items={items} />
+      <AccordionPage items={items} />
       <ButtonPage />
     </div>
   );
