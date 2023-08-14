@@ -11,12 +11,12 @@ function DropdownPage() {
     { label: "I Like Blue", value: "blue" },
     { label: "I Like Green", value: "green" },
     { label: "I like Pink", value: "pink" },
-    { label: "Ilike Grey", value: "grey" },
+    { label: "I like Grey", value: "grey" },
   ];
   return (
     <>
       <h1>Dropdown Example</h1>
-      <Dropdown selected={selected} onSelect={handleSelect} options={options} />
+      <Dropdown value={selected} onChange={handleSelect} options={options} />
     </>
   );
 }
