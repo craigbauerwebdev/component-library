@@ -17,7 +17,6 @@ function DropdownPage() {
     <>
       <h1>Dropdown Example</h1>
       <Dropdown selected={selected} onSelect={handleSelect} options={options} />
-      ;
     </>
   );
 }

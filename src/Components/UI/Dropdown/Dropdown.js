@@ -18,14 +18,9 @@ function Dropdown({ options, selected, onSelect }) {
     );
   });
 
-  let selection = "xxx...";
-  if (selected) {
-    selection = selected;
-  }
-
   return (
     <>
-      <div onClick={handleClick}>{selection}</div>
+      <div onClick={handleClick}>{selected || "Select..."}</div>
       {isOpen && <div>{renderedOptions}</div>}
     </>
   );

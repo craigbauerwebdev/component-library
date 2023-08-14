@@ -21,7 +21,7 @@ function AccordionPage() {
   return (
     <>
       <h1>Accordion Example</h1>
-      <Accordion items={items} />;
+      <Accordion items={items} />
     </>
   );
 }
