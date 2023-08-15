@@ -1,4 +1,4 @@
-import Button from "../Components/UI/Button";
+import Button from "../Components/UI/Buttons/Button";
 import { FaBitcoin, FaStickerMule } from "react-icons/fa";
 import { DiCodeigniter } from "react-icons/di";
 
