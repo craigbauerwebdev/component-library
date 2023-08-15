@@ -14,10 +14,10 @@ function DropdownPage() {
     { label: "I like Grey", value: "grey" },
   ];
   return (
-    <>
+    <div className="page">
       <h1>Dropdown Example</h1>
       <Dropdown value={selected} onChange={handleSelect} options={options} />
-    </>
+    </div>
   );
 }
 

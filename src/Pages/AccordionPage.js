@@ -19,10 +19,10 @@ function AccordionPage() {
     },
   ];
   return (
-    <>
+    <div className="page">
       <h1>Accordion Example</h1>
       <Accordion items={items} />
-    </>
+    </div>
   );
 }
 

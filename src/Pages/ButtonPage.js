@@ -8,7 +8,7 @@ function ButtonPage() {
   };
 
   return (
-    <div className="button-page">
+    <div className="button-page page">
       Buttons
       <Button primary rounded className="mb-20" onClick={handleClick}>
         Button With No Props
