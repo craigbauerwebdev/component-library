@@ -31,11 +31,9 @@ button > svg {
 .accordion-content {
   padding: 15px;
   line-height: 30px;
-  border-bottom: 1px solid #000;
 }
 
 .page {
   margin-bottom: 50px;
   padding-bottom: 50px;
-  border-bottom: 1px solid #000;
 }
