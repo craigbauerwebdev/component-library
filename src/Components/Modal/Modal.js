@@ -1,17 +1,17 @@
-//import Link from "../../Navigation/Link/Link";
-//import { useEffect, useState } from "react";
-function Modal({ closeModal }) {
+import ReactDOM from "react-dom";
+function Modal({ closeModal, children, actionBar }) {
   const handleCloseModal = () => {
     closeModal();
   };
-  return (
+  return ReactDOM.createPortal(
     <>
-      <div className="modal"></div>
+      <div className="modal" onClick={handleCloseModal}></div>
       <div className="innerModal">
-        <div onClick={handleCloseModal}>&times;</div>
-        <div>inner modal</div>
+        {children}
+        {actionBar}
       </div>
-    </>
+    </>,
+    document.querySelector(".modal-container")
   );
 }
 
