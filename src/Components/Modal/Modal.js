@@ -1,5 +1,10 @@
+import { useEffect } from "react";
 import ReactDOM from "react-dom";
 function Modal({ closeModal, children, actionBar }) {
+  useEffect(() => {
+    document.body.classList.add("overflow-hidden");
+    return () => document.body.classList.remove("overflow-hidden");
+  }, []);
   const handleCloseModal = () => {
     closeModal();
   };
