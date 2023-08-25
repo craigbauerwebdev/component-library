@@ -5,6 +5,7 @@ import ModalPage from "./Pages/ModalPage";
 //import Link from "./Navigation/Link/Link";
 import Route from "./Navigation/Route";
 import Sidebar from "./Components/Sidebar/Sidebar";
+import TablePage from "./Pages/TablePage";
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
         </Route>
         <Route path="/modal">
           <ModalPage />
+        </Route>
+        <Route path="/table">
+          <TablePage />
         </Route>
       </div>
     </div>
